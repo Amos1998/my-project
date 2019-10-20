@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.4.js"></script>
+	</head>
+	<body>
+	    <div id="box">
+	    </div>
+		<script>
+			var showBtn = true; //是否显示按钮
+			if(showBtn) {
+				var btn = $('<button> click me</button>');
+				btn.on('click', function() {
+					console.log('clicked!');
+				});
+				$('#box').append(btn);
+			}
+
+		</script>
+	</body>
+</html>
