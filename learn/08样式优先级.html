@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" href="css/style2.css" />
+		<link rel="stylesheet" href="css/style1.css" />-->
+		
+		<style>
+		/*
+		 优先级就近原则，同权重情况下样式定义最近者为准
+		 载入样式以最后载入的定位为准
+		!important > #id > .class > tag
+		!important比行内样式优先级还要高。标签内设style
+		 * */
+			/*.temp1{
+				background: red;
+			}
+			.temp1{
+				background: yellow;
+			}*/
+			
+			.temp1{
+				background: yellow !important;
+			}
+			#temp1{
+				background: pink;
+			}
+			div{
+				background: gray ;
+			}
+			/*
+			 *!important > #id > .class > tag
+			 */
+		</style>
+	</head>
+	<body>
+		<div class="temp1" id="temp1" style="background: green;">
+			文本文本文本
+		</div>
+	</body>
+</html>
