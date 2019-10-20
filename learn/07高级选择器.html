@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*
+			 * 找第一个元素，如果是p标签，不是就不找了
+			 * .box p:first-child{
+				background: red;
+			}*/
+			/*找到第一个p标签*/
+			.box p:first-of-type{
+				background: red;
+			}
+			.box:after{
+				display: block;
+				background: yellow;
+				content: 'hello';
+				font-size: 40px;
+			}
+			.box:before{
+				content: 'before';
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>
+				child第一个div标签
+			</div>
+			<p>
+				child第一个p标签
+			</p>
+		</div>
+	</body>
+</html>
