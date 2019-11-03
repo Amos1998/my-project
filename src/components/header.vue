@@ -6,7 +6,7 @@
   	 				  <li><a href="#">首页</a></li>
   	 				  <li><a href="#">故事大赛</a></li>
   	 				  <li><a href="#">APP下载</a></li>
-  	 				  <li><a href="#">学堂</a></li>
+  	 				  <li><router-link to='/xuetang'>学堂</router-link></li>
   	 			</ul>
   	 			<div class="fr">
   	 				  <div class="search">
@@ -25,9 +25,14 @@
 </template>
 
 <script>
-export default {
-	  
-}
+    export default {
+	    data () {
+        return {msg:''}
+      },
+      methods:{
+
+      }
+    }
 </script>
 
 <style scoped>
